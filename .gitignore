@@ -58,5 +58,6 @@ docs/_build/
 .envrc
 
 # db
+*.sqlite3
 mysite/*.sqlite3
 mybook/*.sqlite3
