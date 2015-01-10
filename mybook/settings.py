@@ -63,7 +63,10 @@ WSGI_APPLICATION = 'mybook.wsgi.application'
 # }
 
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+# DATABASES['default'] =  dj_database_url.config()
+DATABASES = {
+    'default': dj_database_url.config(default='sqlite:///db.sqlite')
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
