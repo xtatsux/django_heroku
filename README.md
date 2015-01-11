@@ -13,6 +13,8 @@ HerokuにデプロイするためのDjangoのサンプルコードです。
    * [direnv](https://github.com/zimbatm/direnv)を利用
    * python 3環境
 
+手順
+
     $ cp .envrc.template .envrc
     $ vim .envrc  # Edit for your development environment.
     $ direnv allow .
