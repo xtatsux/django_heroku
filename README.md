@@ -19,3 +19,17 @@ HerokuにデプロイするためのDjangoのサンプルコードです。
     $ vim .envrc  # Edit for your development environment.
     $ direnv allow .
     $ pip install -r requirements.txt
+
+実行手順
+
+ローカル
+
+    $ python manage.py migrate
+    $ foreman start
+
+[http://0.0.0.0:5000/cms/book/](http://0.0.0.0:5000/cms/book/)にアクセス
+
+herokuへのデプロイ
+
+    $ git push heroku master
+    $ heroku open
